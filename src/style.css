@@ -1,0 +1,47 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-padding: 3rem;
+  --grid-cols: 1;
+  --grid-rows: 1;
+  --hover-bg-clr: none;
+}
+
+body {
+  padding: var(--body-padding);
+  background: #1a1a1a;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - var(--body-padding) * 2);
+  overflow: hidden;
+}
+
+.playground {
+  display: grid;
+  grid-gap: .2rem;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  aspect-ratio: 1;
+  height: 15px;
+  border-radius: 3px;
+  background: #373737;
+  transition: all linear 1s;
+}
+
+.grid-item:hover {
+  background: var(--hover-bg-clr);
+  transition: none;
+}
+

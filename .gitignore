@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/hover-snake.iml
