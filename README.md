@@ -1,3 +1,3 @@
-¯\_(ツ)_/¯
+ツ
 
 ![Alt Text](./app-presentation.gif)
